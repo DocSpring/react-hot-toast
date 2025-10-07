@@ -89,6 +89,11 @@ const ToastBarBase = styled('div')`
     color: var(--rht-error-fg, #991b1b);
   }
 
+  &.rht-warning {
+    background: var(--rht-warning-bg, #ea580c);
+    color: var(--rht-warning-fg, #ffffff);
+  }
+
   &.rht-loading {
     background: var(--rht-loading-bg, #fff);
     color: var(--rht-loading-fg, #363636);

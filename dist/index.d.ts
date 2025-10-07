@@ -2,7 +2,7 @@ import * as react from 'react';
 import { CSSProperties } from 'react';
 import * as goober from 'goober';
 
-type ToastType = 'success' | 'error' | 'loading' | 'blank' | 'custom';
+type ToastType = 'success' | 'error' | 'warning' | 'loading' | 'blank' | 'custom';
 type ToastPosition = 'top-left' | 'top-center' | 'top-right' | 'bottom-left' | 'bottom-center' | 'bottom-right';
 type Renderable = React.ReactElement | string | null;
 interface IconTheme {
@@ -56,6 +56,7 @@ declare const toast: {
     (message: Message, opts?: ToastOptions): string;
     error: ToastHandler;
     success: ToastHandler;
+    warning: ToastHandler;
     loading: ToastHandler;
     custom: ToastHandler;
     dismiss(toastId?: string, toasterId?: string): void;

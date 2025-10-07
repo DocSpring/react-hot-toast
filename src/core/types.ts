@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-export type ToastType = 'success' | 'error' | 'loading' | 'blank' | 'custom';
+export type ToastType = 'success' | 'error' | 'warning' | 'loading' | 'blank' | 'custom';
 export type ToastPosition =
   | 'top-left'
   | 'top-center'
